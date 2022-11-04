@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shoot_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAc-Oc-8vs">
+                                <rect key="frame" x="42" y="725.66666666666663" width="306" height="34.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.329999999999998" id="DJI-bE-Mbh"/>
+                                    <constraint firstAttribute="width" constant="306" id="ZTI-wB-IcE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Shoot!"/>
+                                <connections>
+                                    <action selector="shootButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRc-Y6-Ycv"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="yJX-AL-x2e">
+                                <rect key="frame" x="120" y="447" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7A9-dh-1CS"/>
+                                    <constraint firstAttribute="width" constant="150" id="kqg-o0-FpY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82d-7o-7jD">
+                                <rect key="frame" x="168.33333333333334" y="206" width="53.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDh-Cf-e5I">
+                                <rect key="frame" x="168" y="617" width="54.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-6f-Px0">
+                                <rect key="frame" x="120" y="247" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="H5o-Uh-2U6"/>
+                                    <constraint firstAttribute="height" constant="150" id="Yto-QO-Swz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="fDh-Cf-e5I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="95L-UM-8od"/>
+                            <constraint firstItem="82d-7o-7jD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DOY-bB-X2f"/>
+                            <constraint firstItem="fDh-Cf-e5I" firstAttribute="top" secondItem="yJX-AL-x2e" secondAttribute="bottom" constant="20" id="Eib-xY-nU5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WAc-Oc-8vs" secondAttribute="bottom" constant="50" id="FvB-V0-YNY"/>
+                            <constraint firstItem="xSu-6f-Px0" firstAttribute="top" secondItem="82d-7o-7jD" secondAttribute="bottom" constant="20" id="JEe-Or-kHt"/>
+                            <constraint firstItem="WAc-Oc-8vs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="20" id="MT4-AV-Ffg"/>
+                            <constraint firstItem="yJX-AL-x2e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="Vr0-FR-Dg8"/>
+                            <constraint firstItem="xSu-6f-Px0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WYe-hz-Qwv"/>
+                            <constraint firstItem="xSu-6f-Px0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="ZM8-8b-enh"/>
+                            <constraint firstItem="yJX-AL-x2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZWf-Ll-uOa"/>
+                            <constraint firstItem="WAc-Oc-8vs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mA6-v9-OPl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cpuImage" destination="xSu-6f-Px0" id="Lc2-Kf-S78"/>
+                        <outlet property="cpuLabel" destination="82d-7o-7jD" id="ohb-ci-XUs"/>
+                        <outlet property="playerImage" destination="yJX-AL-x2e" id="EzG-dB-m2K"/>
+                        <outlet property="playerLabel" destination="fDh-Cf-e5I" id="bDA-pB-0ay"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.92307692307692" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper" width="535" height="693"/>
+        <image name="rock" width="750" height="480"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
